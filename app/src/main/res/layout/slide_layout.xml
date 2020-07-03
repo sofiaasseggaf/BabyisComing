@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg5" >
+
+
+    <ImageView
+        android:id="@+id/slide_images"
+        android:layout_width="230dp"
+        android:layout_height="230dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        app:srcCompat="@drawable/bulan2" />
+
+    <TextView
+        android:id="@+id/slide_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/slide_images"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="TRISEMESTER 1 - BULAN 1"
+        android:textColor="@color/cardview_dark_background"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <WebView
+        android:id="@+id/slide_description"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/slide_heading"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        android:textDirection="firstStrong"
+        >
+    </WebView>
+
+<!--    <TextView
+        android:id="@+id/slide_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:textSize="16dp"
+        android:textColor="@color/cardview_dark_background"
+        android:layout_below="@id/slide_heading"
+        android:text="Satu Bulan Perkembangan Janin. Mulai terbentuknya kantung kehamilan yang berfungsi untuk melindungi janin dari air ketuban dan mulai terbentuknya placenta yang berfungsi untuk menyalurkan nutrisi makanan dari tubuh ibu ke janinya. Dan juga sudah mulai terjadi aliran darah dalam tubuh janin. Sehingga pada kehamilan bulan pertama, para ibu hamil sebaiknya disarankan untuk lebih banyak mengkonsumsi buah yang baik untuk ibu hamil."
+        android:textAlignment="center" /> -->
+
+</RelativeLayout>

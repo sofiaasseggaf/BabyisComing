@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/background2"
+    tools:context="com.example.user.babyiscoming.HalamanDepan" >
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/logonavy" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BABY IS COMING"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textColorHighlight="@color/colorPrimaryDark"
+            android:layout_below="@id/logo"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/merriweather"/>
+
+        <Button
+            android:id="@+id/menuinput"
+            android:layout_width="320dp"
+            android:layout_height="50dp"
+            android:text="INPUT DATA"
+            android:textSize="14sp"
+            android:layout_marginTop="550dp"
+            android:background="@drawable/buttonstyle"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:gravity="center" />
+
+        <Button
+            android:id="@+id/btnstart"
+            android:layout_width="320dp"
+            android:layout_height="60dp"
+            android:background="@drawable/buttonstyle"
+            android:text="START"
+            android:textSize="24sp"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:layout_below="@id/menuinput"
+            android:textColor="@color/white"/>
+
+</RelativeLayout>

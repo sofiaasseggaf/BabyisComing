@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bgbg"
+    tools:context="com.example.user.babyiscoming.Keluhan" >
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/logo"/>
+
+        <TextView
+            android:id="@+id/textlogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:text="BABY IS COMING"
+            android:textSize="28sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textColorHighlight="@color/colorPrimaryDark"
+            android:fontFamily="serif-monospace"
+            android:layout_below="@id/logo"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="KELUHAN UMUM YANG TERJADI PADA IBU HAMIL"
+            android:textSize="24sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textColorHighlight="@color/colorPrimaryDark"
+            android:layout_marginTop="22dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textAlignment="center"
+            android:fontFamily="casual"
+            android:textStyle="bold"
+            android:id="@+id/texttabel"
+            android:layout_below="@id/textlogo"/>
+
+        <TextView
+            android:id="@+id/ms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18sp"
+            android:textAlignment="textStart"
+            android:fontFamily="sans-serif"
+            android:text="1. MORNING SICKNESS"
+            android:textStyle="bold"
+            android:layout_below="@id/texttabel"/>
+        <WebView
+            android:id="@+id/WVms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ms"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp" >
+        </WebView>
+
+
+        <TextView
+            android:id="@+id/ms2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18sp"
+            android:textAlignment="textStart"
+            android:fontFamily="sans-serif"
+            android:text="2. SEMBELIT"
+            android:textStyle="bold"
+            android:layout_below="@id/WVms"/>
+
+        <WebView
+            android:id="@+id/WVms2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ms2"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:scrollbars="vertical"
+            android:scrollIndicators="right">
+        </WebView>
+
+        <TextView
+            android:id="@+id/ms3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18sp"
+            android:textAlignment="textStart"
+            android:fontFamily="sans-serif"
+            android:text="3. KRAM"
+            android:textStyle="bold"
+            android:layout_below="@id/WVms2"/>
+
+        <WebView
+            android:id="@+id/WVms3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ms3"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:scrollbars="vertical"
+            android:scrollIndicators="right">
+        </WebView>
+
+        <TextView
+            android:id="@+id/ms4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18sp"
+            android:textAlignment="textStart"
+            android:fontFamily="sans-serif"
+            android:text="4. PEMBENGKAKAN"
+            android:textStyle="bold"
+            android:layout_below="@id/WVms3"/>
+
+        <WebView
+            android:id="@+id/WVms4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ms4"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:scrollbars="vertical"
+            android:scrollIndicators="right">
+        </WebView>
+
+        <TextView
+            android:id="@+id/ms5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18sp"
+            android:textAlignment="textStart"
+            android:fontFamily="sans-serif"
+            android:text="5. SAKIT PUNGGUNG"
+            android:textStyle="bold"
+            android:layout_below="@id/WVms4"/>
+
+        <WebView
+            android:id="@+id/WVms5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ms5"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:scrollbars="vertical"
+            android:scrollIndicators="right" >
+        </WebView>
+
+
+        <TextView
+            android:id="@+id/ms6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18sp"
+            android:textAlignment="textStart"
+            android:fontFamily="sans-serif"
+            android:text="6. SAKIT KEPALA"
+            android:textStyle="bold"
+            android:layout_below="@id/WVms5"/>
+
+        <WebView
+            android:id="@+id/WVms6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ms6"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:scrollbars="vertical"
+            android:scrollIndicators="right">
+        </WebView>
+
+        <TextView
+            android:id="@+id/ms7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18sp"
+            android:textAlignment="textStart"
+            android:fontFamily="sans-serif"
+            android:text="7. SERING BUANG AIR KECIL"
+            android:textStyle="bold"
+            android:layout_below="@id/WVms6"/>
+
+        <WebView
+            android:id="@+id/WVms7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ms7"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:scrollbars="vertical"
+            android:scrollIndicators="right">
+        </WebView>
+
+        <TextView
+            android:id="@+id/ms8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18sp"
+            android:textAlignment="textStart"
+            android:fontFamily="sans-serif"
+            android:text="8. KEPUTIHAN"
+            android:textStyle="bold"
+            android:layout_below="@id/WVms7"/>
+
+        <WebView
+            android:id="@+id/WVms8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ms8"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:scrollbars="vertical"
+            android:scrollIndicators="right"
+            android:layout_marginBottom="30dp" >
+        </WebView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="sumber : www.hellosehat.com"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+
+</ScrollView>

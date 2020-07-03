@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/bgbg"
+    tools:context="com.example.user.babyiscoming.input">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/logonavy"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BABY IS COMING"
+        android:textSize="30sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        android:textColorHighlight="@color/colorPrimaryDark"
+        android:layout_below="@id/logo"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="serif-monospace"
+        android:id="@+id/textView" />
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_marginTop="270dp"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp">
+
+        <TextView
+            android:id="@+id/textinputnama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="INPUT NAMA"
+            android:layout_centerHorizontal="true"
+            android:textColor="#156a81"
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="24sp"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/nama"
+            android:layout_width="400dp"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:inputType="text"
+            android:text="type here"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textAlignment="center"
+            android:layout_below="@id/textinputnama"/>
+
+        <TextView
+            android:id="@+id/textinputhpht"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="INPUT HPHT"
+            android:textColor="#156a81"
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/nama"/>
+
+        <TextView
+            android:id="@+id/textinputhpht2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(Hari Pertama Haid Terakhir)"
+            android:textColor="#156a81"
+            android:fontFamily="casual"
+            android:layout_centerHorizontal="true"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_below="@id/textinputhpht"/>
+
+        <EditText
+            android:id="@+id/tanggal"
+            android:layout_width="70dp"
+            android:layout_height="60dp"
+            android:inputType="number"
+            android:text="date"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:layout_marginLeft="40dp"
+            android:layout_below="@id/textinputhpht2"/>
+
+        <EditText
+            android:id="@+id/bulan"
+            android:layout_width="70dp"
+            android:layout_height="60dp"
+            android:inputType="number"
+            android:text="month"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:layout_marginLeft="40dp"
+            android:layout_below="@id/textinputhpht2"
+            android:layout_toRightOf="@id/tanggal" />
+
+        <EditText
+            android:id="@+id/tahun"
+            android:layout_width="70dp"
+            android:layout_height="60dp"
+            android:inputType="number"
+            android:text="year"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:layout_marginLeft="40dp"
+            android:layout_below="@id/textinputhpht2"
+            android:layout_toRightOf="@id/bulan" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btninput"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="34dp"
+        android:background="@drawable/buttonstyle2"
+        android:text="INPUT"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:layout_below="@id/rl"/>
+
+    <Button
+        android:id="@+id/btnback"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/btninput"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/buttonstyle2"
+        android:text="back to home"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

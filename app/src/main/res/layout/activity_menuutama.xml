@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgg"
+    tools:context="com.example.user.babyiscoming.MenuUtama">
+
+    <!--    <LinearLayout
+            android:id="@+id/ll"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="15dp"
+            android:layout_below="@id/textlogo">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="Halo "
+                android:layout_marginLeft="30dp"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/namaibu"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:textColor="#fff"
+            android:textSize="26sp"
+            android:layout_marginLeft="5dp" />
+
+    </LinearLayout> -->
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/logonavy"/>
+
+    <TextView
+        android:id="@+id/textlogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BABY IS COMING"
+        android:textSize="20sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textColorHighlight="@color/colorPrimaryDark"
+        android:layout_below="@id/logo"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/merriweather"/>
+
+    <RelativeLayout
+        android:layout_width="370dp"
+        android:layout_height="130dp"
+        android:layout_below="@id/textlogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:id="@+id/nama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:text="a"
+            android:fontFamily="@font/montserrat_bold"
+            android:layout_marginTop="15dp"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/textp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Prediksi Tanggal Kelahiran Bayi Anda :"
+            android:textColor="@color/colorPrimaryDark"
+            android:fontFamily="@font/montserrat_bold"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/nama"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/prediksi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20sp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/textp"
+            android:layout_marginTop="5dp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_marginTop="300dp"
+        android:orientation="vertical"
+        android:paddingTop="10dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:weightSum="4" >
+
+        <Button
+            android:id="@+id/btnperkembanganjanin"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="Perkembangan Janin"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#ffffff"
+            android:fontFamily="@font/raleway_bold"
+            android:textSize="16sp"
+            android:background="#563C77BF" />
+
+        <Button
+            android:id="@+id/btnberatbadan"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="Berat Badan Ideal"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#ffffff"
+            android:fontFamily="@font/raleway_bold"
+            android:textSize="16sp"
+            android:background="#563C77BF" />
+
+        <Button
+            android:id="@+id/btnnutrisi"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="Nutrisi"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#ffffff"
+            android:fontFamily="@font/raleway_bold"
+            android:textSize="16sp"
+            android:background="#563C77BF" />
+
+        <Button
+            android:id="@+id/btnbahayadankeuluhan"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="Bahaya dan Keluhan"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#ffffff"
+            android:fontFamily="@font/raleway_bold"
+            android:textSize="16sp"
+            android:background="#563C77BF" />
+
+    </LinearLayout>
+
+</RelativeLayout>
