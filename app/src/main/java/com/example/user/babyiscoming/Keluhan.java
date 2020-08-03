@@ -14,17 +14,9 @@ public class Keluhan extends AppCompatActivity {
     WebView WVms, WVms2, WVms3, WVms4, WVms5, WVms6, WVms7, WVms8 ;
     String text, text2, text3, text4, text5, text6, text7, text8 ;
 
-    Integer tgl3, bln3, thn3;
-    String nm;
-
     protected void onCreate (Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_keluhan);
-
-        nm = getIntent().getStringExtra("nm");
-        tgl3 = getIntent().getIntExtra("tgl3", 0);
-        bln3 = getIntent().getIntExtra("bln3", 0);
-        thn3 = getIntent().getIntExtra("thn3", 0);
 
         WVms = (WebView) findViewById(R.id.WVms);
         WVms2 = (WebView) findViewById(R.id.WVms2);
@@ -95,10 +87,6 @@ public class Keluhan extends AppCompatActivity {
 
     public void onBackPressed() {
         Intent a = new Intent(getApplicationContext(), BahayaDanKeluhan.class);
-        a.putExtra("nm", nm);
-        a.putExtra("tgl3", tgl3);
-        a.putExtra("bln3", bln3);
-        a.putExtra("thn3", thn3);
         startActivity(a);
         finish();
     }

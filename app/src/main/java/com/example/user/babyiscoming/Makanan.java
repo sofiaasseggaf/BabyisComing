@@ -22,20 +22,11 @@ public class Makanan extends AppCompatActivity {
     private SliderAdapterMakanan sliderAdapterMakanan;
     private Button backbutton;
     private Button nextbutton;
-
-    Integer tgl3, bln3, thn3;
-    String nm;
-
     private int mCurrentPage;
 
     protected void onCreate (Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_makanan);
-
-        nm = getIntent().getStringExtra("nm");
-        tgl3 = getIntent().getIntExtra("tgl3", 0);
-        bln3 = getIntent().getIntExtra("bln3", 0);
-        thn3 = getIntent().getIntExtra("thn3", 0);
 
         slide_makanan = (ViewPager) findViewById(R.id.slide_makanan);
         mDotLayout = (LinearLayout) findViewById(R.id.mDotLayout);
@@ -127,10 +118,6 @@ public class Makanan extends AppCompatActivity {
 
     public void onBackPressed() {
         Intent a = new Intent(getApplicationContext(), Nutrisi.class);
-        a.putExtra("nm", nm);
-        a.putExtra("tgl3", tgl3);
-        a.putExtra("bln3", bln3);
-        a.putExtra("thn3", thn3);
         startActivity(a);
         finish();
     }

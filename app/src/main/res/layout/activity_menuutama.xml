@@ -6,7 +6,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bgg"
-    tools:context="com.example.user.babyiscoming.MenuUtama">
+    tools:context="com.example.user.babyiscoming.Home">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
     <!--    <LinearLayout
             android:id="@+id/ll"
@@ -74,7 +82,7 @@
             android:textSize="20sp"
             android:textStyle="bold"
             android:textAllCaps="true"
-            android:text="a"
+            android:text="NAMA"
             android:fontFamily="@font/montserrat_bold"
             android:layout_marginTop="15dp"
             android:layout_centerHorizontal="true" />
@@ -105,6 +113,7 @@
     </RelativeLayout>
 
     <LinearLayout
+        android:id="@+id/ll"
         android:layout_width="match_parent"
         android:layout_height="400dp"
         android:layout_marginTop="300dp"
@@ -167,5 +176,25 @@
             android:background="#563C77BF" />
 
     </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="log out"
+        android:textColor="#ffffff"
+        android:fontFamily="@font/raleway_bold"
+        android:textSize="16sp"
+        android:background="#563C77BF"
+        android:layout_below="@id/ll"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="20dp"/>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
 
 </RelativeLayout>

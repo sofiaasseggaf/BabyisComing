@@ -1,9 +1,7 @@
 package com.example.user.babyiscoming;
 
 import android.content.Intent;
-import android.os.Build;
 import android.os.Bundle;
-import android.support.annotation.RequiresApi;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.text.Html;
@@ -25,19 +23,11 @@ public class PerkembanganJanin extends AppCompatActivity {
     private Button backbutton;
     private Button nextbutton;
 
-    Integer tgl3, bln3, thn3;
-    String nm;
-
     private int mCurrentPage;
 
     protected void onCreate (Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_perkembangan_janin);
-
-        nm = getIntent().getStringExtra("nm");
-        tgl3 = getIntent().getIntExtra("tgl3", 0);
-        bln3 = getIntent().getIntExtra("bln3", 0);
-        thn3 = getIntent().getIntExtra("thn3", 0);
 
         slide = (ViewPager) findViewById(R.id.slide);
         mDotLayout = (LinearLayout) findViewById(R.id.mDotLayout);
@@ -127,12 +117,8 @@ public class PerkembanganJanin extends AppCompatActivity {
     };
 
     public void onBackPressed() {
-        Intent a = new Intent(getApplicationContext(), MenuUtama.class);
+        Intent a = new Intent(getApplicationContext(), Home.class);
         startActivity(a);
-        a.putExtra("nm", nm);
-        a.putExtra("tgl3", tgl3);
-        a.putExtra("bln3", bln3);
-        a.putExtra("thn3", thn3);
         finish();
     }
 }
