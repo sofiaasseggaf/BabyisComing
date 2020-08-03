@@ -1,29 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F0F6AE">
+    android:background="@drawable/background2">
 
     <ImageView
-        android:id="@+id/img"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:src="@drawable/logonavy"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="300dp">
+        android:background="@drawable/logonavy"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp">
     </ImageView>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Baby Is Coming"
-        android:textColor="#030A32"
-        android:fontFamily="@font/raleway_bold"
-        android:textSize="14pt"
-        android:layout_below="@id/img"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp">
-    </TextView>
+        android:text="BABY IS COMING"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textColorHighlight="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:fontFamily="@font/merriweather"/>
 
-</RelativeLayout>
+
+</LinearLayout>

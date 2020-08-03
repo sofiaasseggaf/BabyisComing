@@ -15,19 +15,19 @@ import com.example.user.babyiscoming.utility.PreferenceUtils;
 
 public class HalamanDepan extends AppCompatActivity {
 
-    Button menuinput;
+    Button btn_input_data;
     Button btnstart;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.home);
+        setContentView(R.layout.halaman_depan);
 
-        menuinput = findViewById(R.id.menuinput);
+        btn_input_data = findViewById(R.id.btn_input_data);
         btnstart = findViewById(R.id.btnstart);
 
         if (PreferenceUtils.getNama(this) == null || PreferenceUtils.getNama(this).equalsIgnoreCase("")) {
 
-            menuinput.setOnClickListener(new View.OnClickListener() {
+            btn_input_data.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
                     Intent a = new Intent(HalamanDepan.this, InputData.class);

@@ -26,7 +26,7 @@ public class Home extends AppCompatActivity {
     @SuppressLint("ResourceType")
     protected void onCreate (Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_menuutama);
+        setContentView(R.layout.home);
 
         nama = findViewById(R.id.nama);
         prediksi = findViewById(R.id.prediksi);
@@ -36,7 +36,7 @@ public class Home extends AppCompatActivity {
         btnbahayadankeluhan = findViewById(R.id.btnbahayadankeuluhan);
         btn_logout = findViewById(R.id.btn_logout);
 
-        nama.setText("HALO " + PreferenceUtils.getNama(getApplicationContext()) +" !");
+        nama.setText("HALO " + PreferenceUtils.getNama(getApplicationContext()));
         prediksi.setText(PreferenceUtils.getTanggal(getApplicationContext()) + " " +
                 PreferenceUtils.getBulan(getApplicationContext()) + " " +
                 PreferenceUtils.getTahun(getApplicationContext()));

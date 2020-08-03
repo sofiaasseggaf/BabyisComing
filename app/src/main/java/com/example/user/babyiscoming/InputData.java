@@ -10,6 +10,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import com.example.user.babyiscoming.utility.PreferenceUtils;
 
@@ -21,7 +22,7 @@ public class InputData extends AppCompatActivity {
 
     Button btninput;
     EditText nama, tanggal, bulan, tahun;
-    String inputNama;
+    String inputNama, namaLahirBulan;
     Integer inputTanggal, inputBulan, inputTahun;
     Integer lahirTanggal, lahirBulan, lahirTahun;
 
@@ -35,16 +36,17 @@ public class InputData extends AppCompatActivity {
         tahun = findViewById(R.id.tahun);
         btninput = findViewById(R.id.btninput);
 
-        inputNama = nama.getText().toString();
-        inputTanggal = Integer.parseInt(tanggal.getText().toString());
-        inputBulan = Integer.parseInt(bulan.getText().toString());
-        inputTahun = Integer.parseInt(tahun.getText().toString());
-
         btninput.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
-                if (btninput.isClickable()) {
+                if (!nama.getText().toString().equalsIgnoreCase("") && !tanggal.getText().toString().equalsIgnoreCase("") &&
+                        !bulan.getText().toString().equalsIgnoreCase("") && !tahun.getText().toString().equalsIgnoreCase("")) {
+
+                    inputNama = nama.getText().toString();
+                    inputTanggal = Integer.parseInt(tanggal.getText().toString());
+                    inputBulan = Integer.parseInt(bulan.getText().toString());
+                    inputTahun = Integer.parseInt(tahun.getText().toString());
 
                     if (inputBulan<4 && inputBulan>0){
                         lahirTanggal = inputTanggal+7;
@@ -56,19 +58,57 @@ public class InputData extends AppCompatActivity {
                         lahirTahun = inputTahun+1;
                     }
 
-                    PreferenceUtils.saveNama(inputNama, getApplicationContext());
-                    PreferenceUtils.saveTanggal(String.valueOf(inputTanggal), getApplicationContext());
-                    PreferenceUtils.saveBulan(String.valueOf(inputBulan), getApplicationContext());
-                    PreferenceUtils.saveTahun(String.valueOf(inputTahun), getApplicationContext());
+                    convertBulan();
 
+                    Intent a = new Intent(InputData.this, Home.class);
+                    PreferenceUtils.saveNama(inputNama, getApplicationContext());
+                    PreferenceUtils.saveTanggal(String.valueOf(lahirTanggal), getApplicationContext());
+                    PreferenceUtils.saveBulan(namaLahirBulan, getApplicationContext());
+                    PreferenceUtils.saveTahun(String.valueOf(lahirTahun), getApplicationContext());
+                    startActivity(a);
+                    finish();
+
+                } else {
+                    Toast.makeText(InputData.this, "lengkapi data !", Toast.LENGTH_SHORT).show();
                 }
 
-                Intent a = new Intent(InputData.this, Home.class);
-                startActivity(a);
-                finish();
+
             }
         });
 
+    }
+
+    public void convertBulan(){
+
+        if (lahirBulan==1){
+            namaLahirBulan = "Januari";
+        } else if (lahirBulan == 2){
+            namaLahirBulan = "Februari";
+        } else if (lahirBulan == 2){
+            namaLahirBulan = "Februari";
+        } else if (lahirBulan == 3){
+            namaLahirBulan = "Maret";
+        } else if (lahirBulan == 4){
+            namaLahirBulan = "April";
+        } else if (lahirBulan == 5){
+            namaLahirBulan = "Mei";
+        } else if (lahirBulan == 6){
+            namaLahirBulan = "Juni";
+        } else if (lahirBulan == 7){
+            namaLahirBulan = "Juli";
+        } else if (lahirBulan == 8){
+            namaLahirBulan = "Agustus";
+        } else if (lahirBulan == 9){
+            namaLahirBulan = "September";
+        } else if (lahirBulan == 10){
+            namaLahirBulan = "Oktober";
+        } else if (lahirBulan == 11){
+            namaLahirBulan = "November";
+        } else if (lahirBulan == 12){
+            namaLahirBulan = "Desember";
+        } else {
+            namaLahirBulan = " - ";
+        }
     }
 
     @Override
